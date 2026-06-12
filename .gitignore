@@ -1,0 +1,39 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+.vercel/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Data (large / fetched)
+data/raw/
+data/cache/
+*.csv.gz
+*.parquet
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Claude
+.claude/worktrees/
