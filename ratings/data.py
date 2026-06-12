@@ -19,6 +19,24 @@ class Match:
     home_score: int
     away_score: int
     neutral: bool
+    tournament: str = "Friendly"
+
+
+def importance_weight(tournament: str) -> float:
+    """赛事重要性权重：友谊赛噪声大应降权，正赛信号强应升权。"""
+    t = tournament.lower()
+    if t == "friendly":
+        return 0.2
+    if "qualification" in t or "qualifier" in t:
+        return 0.6
+    if "world cup" in t:
+        return 1.0
+    continental = ("euro", "copa am", "nations league", "african",
+                   "asian cup", "gold cup", "concacaf", "confederations",
+                   "oceania", "copa rey")
+    if any(k in t for k in continental):
+        return 0.8
+    return 0.5
 
 
 def ensure_dataset(path: str = CACHE_PATH) -> str:
@@ -45,6 +63,7 @@ def load_matches(path: str) -> list[Match]:
                     home_score=hs,
                     away_score=as_,
                     neutral=row["neutral"].strip().lower() == "true",
+                    tournament=row.get("tournament", "Friendly"),
                 )
             )
     return matches

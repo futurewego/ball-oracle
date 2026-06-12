@@ -6,7 +6,7 @@ import numpy as np
 from scipy.optimize import minimize
 from scipy.special import gammaln
 
-from ratings.data import Match
+from ratings.data import Match, importance_weight
 
 
 @dataclass
@@ -32,8 +32,12 @@ def _dc_log_tau(hs, as_, lam_h, lam_a, rho):
 
 
 def fit(matches: list[Match], half_life_days: float = 730.0,
-        l2: float = 1e-3, max_iter: int = 200) -> Ratings:
-    """对一批比赛做时间加权的 Dixon-Coles 极大似然，返回评分。"""
+        l2: float = 1e-3, max_iter: int = 200,
+        use_importance: bool = True) -> Ratings:
+    """对一批比赛做时间加权的 Dixon-Coles 极大似然，返回评分。
+
+    use_importance: 是否按赛事重要性加权（友谊赛降权）。
+    """
     teams = sorted({m.home for m in matches} | {m.away for m in matches})
     idx = {t: i for i, t in enumerate(teams)}
     n = len(teams)
@@ -47,7 +51,11 @@ def fit(matches: list[Match], half_life_days: float = 730.0,
     t_max = max(m.date for m in matches)
     age = np.array([(t_max - m.date).days for m in matches], dtype=float)
     xi = math.log(2.0) / half_life_days
-    w = np.exp(-xi * age)
+    if use_importance:
+        imp = np.array([importance_weight(m.tournament) for m in matches], dtype=float)
+    else:
+        imp = np.ones(len(matches))
+    w = np.exp(-xi * age) * imp
 
     lg_hs = gammaln(hs + 1.0)
     lg_as = gammaln(as_ + 1.0)

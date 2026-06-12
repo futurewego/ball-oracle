@@ -1,5 +1,14 @@
 import datetime
-from ratings.data import Match, load_matches, filter_before, ensure_dataset
+from ratings.data import (
+    Match, load_matches, filter_before, ensure_dataset, importance_weight,
+)
+
+
+def test_importance_weight_ranks_competitive_above_friendly():
+    assert importance_weight("FIFA World Cup") == 1.0
+    assert importance_weight("UEFA Euro qualification") == 0.6
+    assert importance_weight("Friendly") == 0.2
+    assert importance_weight("FIFA World Cup") > importance_weight("Friendly")
 
 
 def test_dataset_loads_many_matches():
