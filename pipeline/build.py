@@ -33,7 +33,7 @@ def build(out_path: str = OUT_PATH) -> dict:
         matches.append({
             "date": fx.date.isoformat(),
             "group": fx.group,
-            "venue": fx.venue,
+            "matchday": fx.matchday,
             "neutral": fx.neutral,
             "home": fx.home,
             "away": fx.away,

@@ -41,11 +41,11 @@ def _card(m):
     return f"""
     <article class="card">
       <header>
-        <span class="grp">组 {m['group']}</span>
+        <span class="grp">组 {m['group']} · 第{m['matchday']}轮</span>
         <span class="date">{m['date']}</span>
       </header>
       <h2>{m['home_cn']} <small>vs</small> {m['away_cn']}</h2>
-      <div class="venue">{m['venue']}{' · 东道主主场' if not m['neutral'] else ' · 中立场'}
+      <div class="venue">{'东道主主场' if not m['neutral'] else '中立场'}
         　预期比分 λ {m['lam_home']} - {m['lam_away']}</div>
       {_spf_bar(m['spf'], m['home_cn'], m['away_cn'])}
       <div class="sub">总进球分布</div>
@@ -86,7 +86,8 @@ def render(in_path: str = IN_PATH, out_path: str = OUT_PATH) -> str:
   .dot.home{{background:var(--home)}} .dot.draw{{background:var(--draw)}} .dot.away{{background:var(--away)}}
   .sub{{color:var(--mut);font-size:12px;margin:12px 0 6px}}
   .tgrow{{display:flex;align-items:flex-end;gap:5px;height:46px}}
-  .tg{{flex:1;text-align:center}} .tgfill{{background:#2a3550;border-radius:3px 3px 0 0;min-height:2px}}
+  .tg{{flex:1;text-align:center;display:flex;flex-direction:column;justify-content:flex-end;height:34px}}
+  .tgfill{{background:linear-gradient(#5fb0ff,#2b6fd6);border-radius:3px 3px 0 0;min-height:3px}}
   .tglab{{font-size:10px;color:var(--mut);margin-top:3px}}
   .summary{{margin-top:12px;font-size:13px;color:#c7cede;border-top:1px solid var(--line);padding-top:10px}}
   footer{{margin-top:30px;color:var(--mut);font-size:12px;text-align:center;line-height:1.8}}

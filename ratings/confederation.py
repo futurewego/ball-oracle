@@ -22,6 +22,7 @@ CONFEDERATION = {
     "Belgium": "UEFA", "Italy": "UEFA", "Bosnia and Herzegovina": "UEFA",
     "Norway": "UEFA", "Austria": "UEFA", "Scotland": "UEFA", "Denmark": "UEFA",
     "Poland": "UEFA", "Serbia": "UEFA", "Ukraine": "UEFA", "Turkey": "UEFA",
+    "Czech Republic": "UEFA", "Sweden": "UEFA", "England": "UEFA",
     # CONMEBOL
     "Brazil": "CONMEBOL", "Argentina": "CONMEBOL", "Uruguay": "CONMEBOL",
     "Colombia": "CONMEBOL", "Paraguay": "CONMEBOL", "Ecuador": "CONMEBOL",
@@ -34,10 +35,11 @@ CONFEDERATION = {
     "Morocco": "CAF", "Senegal": "CAF", "Nigeria": "CAF", "Egypt": "CAF",
     "Tunisia": "CAF", "Algeria": "CAF", "Ghana": "CAF", "Cameroon": "CAF",
     "South Africa": "CAF", "Ivory Coast": "CAF", "Cape Verde": "CAF", "Mali": "CAF",
+    "DR Congo": "CAF",
     # CONCACAF
     "Mexico": "CONCACAF", "United States": "CONCACAF", "Canada": "CONCACAF",
     "Costa Rica": "CONCACAF", "Panama": "CONCACAF", "Jamaica": "CONCACAF",
-    "Honduras": "CONCACAF", "Curaçao": "CONCACAF",
+    "Honduras": "CONCACAF", "Curaçao": "CONCACAF", "Haiti": "CONCACAF",
     # OFC
     "New Zealand": "OFC",
 }
