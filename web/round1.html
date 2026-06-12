@@ -1,0 +1,348 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>球神谕 · 2026世界杯 第一轮 AI 分析结论</title><style>
+:root{--bg:#0b0e14;--card:#141925;--line:#222a3a;--home:#3ea6ff;--draw:#8b93a7;--away:#ff5d73;--txt:#e6e9f0;--mut:#8b93a7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:"PingFang SC",-apple-system,system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:23px;letter-spacing:1px}.tag{color:var(--mut);font-size:13px;margin-top:4px}
+.warn{margin:16px 0;padding:14px;border:1px solid #4a2a2a;background:#1f1414;border-radius:10px;color:#ffc0c0;font-size:13px;line-height:1.8}
+.warn b{color:#ff8f8f}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card header{display:flex;justify-content:space-between;color:var(--mut);font-size:12px}
+.grp{background:#1d2740;color:#9fc0ff;padding:1px 8px;border-radius:20px}
+.card h2{font-size:19px;margin:8px 0 2px}.card h2 small{color:var(--mut);font-weight:400;font-size:13px}
+.venue{color:var(--mut);font-size:12px;margin-bottom:12px}
+.bar{display:flex;height:30px;border-radius:8px;overflow:hidden;font-size:12px}
+.seg{display:flex;align-items:center;justify-content:center;color:#0b0e14;font-weight:700}
+.seg.home{background:var(--home)}.seg.draw{background:var(--draw)}.seg.away{background:var(--away)}
+.legend{display:flex;gap:14px;margin:7px 0 4px;font-size:12px;color:var(--mut)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}
+.dot.home{background:var(--home)}.dot.draw{background:var(--draw)}.dot.away{background:var(--away)}
+.concl{margin-top:12px;font-size:13px;color:#c7cede;border-top:1px solid var(--line);padding-top:10px}
+footer{margin-top:30px;color:var(--mut);font-size:12px;text-align:center;line-height:1.8}
+</style></head>
+<body><div class="wrap">
+<h1>⚽ 球神谕 · 2026 世界杯 第一轮 AI 分析结论</h1>
+<div class="tag">Dixon-Coles 模型概率 · 共 24 场 · 看球参考</div>
+<div class="warn">
+⚠️ <b>这是模型概率分析，不是投注建议、不是推单。</b><br>
+• <b>"最可能"≠"最值得买"</b>：本页未对比竞彩赔率(SP)、未计算价值(EV)。热门的高概率早被赔率吃掉，<b>盲买热门长期必亏</b>。<br>
+• 模型基于公开国际赛果，跨洲对阵存在不确定性，仅供看球参考。<br>
+• 理性投注，未满 18 周岁禁止参与。本工具不代购、不承诺收益、不提供投注。
+</div>
+<div class="grid">
+    <article class="card">
+      <header><span class="grp">组 A · 第1轮</span><span>2026-06-14</span></header>
+      <h2>墨西哥 <small>vs</small> 南非</h2>
+      <div class="venue">东道主主场 · 预期比分 λ 1.59 - 0.7</div>
+      <div class="bar">
+        <div class="seg home" style="width:58.9%"><span>59%</span></div>
+        <div class="seg draw" style="width:25.0%"><span>25%</span></div>
+        <div class="seg away" style="width:16.1%"><span>16%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>墨西哥胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>南非胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>墨西哥</b>（59%，信心高）· 最可能比分 1:0 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 A · 第1轮</span><span>2026-06-14</span></header>
+      <h2>韩国 <small>vs</small> 捷克</h2>
+      <div class="venue">中立场 · 预期比分 λ 1.13 - 1.29</div>
+      <div class="bar">
+        <div class="seg home" style="width:32.4%"><span>32%</span></div>
+        <div class="seg draw" style="width:27.5%"><span>27%</span></div>
+        <div class="seg away" style="width:40.1%"><span>40%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>韩国胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>捷克胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>捷克</b>（40%，信心低）· 最可能比分 1:1 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 B · 第1轮</span><span>2026-06-14</span></header>
+      <h2>加拿大 <small>vs</small> 波黑</h2>
+      <div class="venue">东道主主场 · 预期比分 λ 1.91 - 0.84</div>
+      <div class="bar">
+        <div class="seg home" style="width:62.5%"><span>62%</span></div>
+        <div class="seg draw" style="width:21.7%"><span>22%</span></div>
+        <div class="seg away" style="width:15.8%"><span>16%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>加拿大胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>波黑胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>加拿大</b>（62%，信心高）· 最可能比分 1:0 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 B · 第1轮</span><span>2026-06-14</span></header>
+      <h2>卡塔尔 <small>vs</small> 瑞士</h2>
+      <div class="venue">中立场 · 预期比分 λ 0.67 - 2.8</div>
+      <div class="bar">
+        <div class="seg home" style="width:6.3%"><span>6%</span></div>
+        <div class="seg draw" style="width:12.4%"><span>12%</span></div>
+        <div class="seg away" style="width:81.3%"><span>81%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>卡塔尔胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>瑞士胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>瑞士</b>（81%，信心高）· 最可能比分 0:2 · 总进球约 3 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 C · 第1轮</span><span>2026-06-14</span></header>
+      <h2>巴西 <small>vs</small> 摩洛哥</h2>
+      <div class="venue">中立场 · 预期比分 λ 0.85 - 0.76</div>
+      <div class="bar">
+        <div class="seg home" style="width:35.2%"><span>35%</span></div>
+        <div class="seg draw" style="width:35.2%"><span>35%</span></div>
+        <div class="seg away" style="width:29.6%"><span>30%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>巴西胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>摩洛哥胜</span></div>
+      <p class="concl">📊 模型结论：<b>平局</b>概率最高（35%）· 最可能比分 0:0 · 总进球约 1 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 C · 第1轮</span><span>2026-06-14</span></header>
+      <h2>海地 <small>vs</small> 苏格兰</h2>
+      <div class="venue">中立场 · 预期比分 λ 0.87 - 2.09</div>
+      <div class="bar">
+        <div class="seg home" style="width:14.6%"><span>15%</span></div>
+        <div class="seg draw" style="width:19.9%"><span>20%</span></div>
+        <div class="seg away" style="width:65.5%"><span>66%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>海地胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>苏格兰胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>苏格兰</b>（66%，信心高）· 最可能比分 0:2 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 D · 第1轮</span><span>2026-06-14</span></header>
+      <h2>美国 <small>vs</small> 巴拉圭</h2>
+      <div class="venue">东道主主场 · 预期比分 λ 1.1 - 1.15</div>
+      <div class="bar">
+        <div class="seg home" style="width:34.3%"><span>34%</span></div>
+        <div class="seg draw" style="width:28.8%"><span>29%</span></div>
+        <div class="seg away" style="width:36.9%"><span>37%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>美国胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>巴拉圭胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>巴拉圭</b>（37%，信心低）· 最可能比分 1:1 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 D · 第1轮</span><span>2026-06-14</span></header>
+      <h2>澳大利亚 <small>vs</small> 土耳其</h2>
+      <div class="venue">中立场 · 预期比分 λ 1.05 - 1.17</div>
+      <div class="bar">
+        <div class="seg home" style="width:32.5%"><span>32%</span></div>
+        <div class="seg draw" style="width:29.0%"><span>29%</span></div>
+        <div class="seg away" style="width:38.6%"><span>39%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>澳大利亚胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>土耳其胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>土耳其</b>（39%，信心低）· 最可能比分 1:1 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 E · 第1轮</span><span>2026-06-14</span></header>
+      <h2>德国 <small>vs</small> 库拉索</h2>
+      <div class="venue">中立场 · 预期比分 λ 3.14 - 0.51</div>
+      <div class="bar">
+        <div class="seg home" style="width:87.8%"><span>88%</span></div>
+        <div class="seg draw" style="width:8.8%"><span>9%</span></div>
+        <div class="seg away" style="width:3.4%"><span>3%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>德国胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>库拉索胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>德国</b>（88%，信心高）· 最可能比分 3:0 · 总进球约 3 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 E · 第1轮</span><span>2026-06-14</span></header>
+      <h2>科特迪瓦 <small>vs</small> 厄瓜多尔</h2>
+      <div class="venue">中立场 · 预期比分 λ 0.53 - 1.05</div>
+      <div class="bar">
+        <div class="seg home" style="width:18.4%"><span>18%</span></div>
+        <div class="seg draw" style="width:33.8%"><span>34%</span></div>
+        <div class="seg away" style="width:47.8%"><span>48%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>科特迪瓦胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>厄瓜多尔胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>厄瓜多尔</b>（48%，信心中）· 最可能比分 0:1 · 总进球约 1 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 F · 第1轮</span><span>2026-06-14</span></header>
+      <h2>荷兰 <small>vs</small> 日本</h2>
+      <div class="venue">中立场 · 预期比分 λ 1.52 - 1.02</div>
+      <div class="bar">
+        <div class="seg home" style="width:48.8%"><span>49%</span></div>
+        <div class="seg draw" style="width:25.8%"><span>26%</span></div>
+        <div class="seg away" style="width:25.4%"><span>25%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>荷兰胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>日本胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>荷兰</b>（49%，信心中）· 最可能比分 1:1 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 F · 第1轮</span><span>2026-06-14</span></header>
+      <h2>瑞典 <small>vs</small> 突尼斯</h2>
+      <div class="venue">中立场 · 预期比分 λ 1.14 - 1.03</div>
+      <div class="bar">
+        <div class="seg home" style="width:37.9%"><span>38%</span></div>
+        <div class="seg draw" style="width:29.4%"><span>29%</span></div>
+        <div class="seg away" style="width:32.6%"><span>33%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>瑞典胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>突尼斯胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>瑞典</b>（38%，信心低）· 最可能比分 1:1 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 G · 第1轮</span><span>2026-06-14</span></header>
+      <h2>比利时 <small>vs</small> 埃及</h2>
+      <div class="venue">中立场 · 预期比分 λ 1.35 - 0.71</div>
+      <div class="bar">
+        <div class="seg home" style="width:52.2%"><span>52%</span></div>
+        <div class="seg draw" style="width:28.3%"><span>28%</span></div>
+        <div class="seg away" style="width:19.5%"><span>19%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>比利时胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>埃及胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>比利时</b>（52%，信心中）· 最可能比分 1:0 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 G · 第1轮</span><span>2026-06-14</span></header>
+      <h2>伊朗 <small>vs</small> 新西兰</h2>
+      <div class="venue">中立场 · 预期比分 λ 2.08 - 0.59</div>
+      <div class="bar">
+        <div class="seg home" style="width:72.3%"><span>72%</span></div>
+        <div class="seg draw" style="width:18.5%"><span>18%</span></div>
+        <div class="seg away" style="width:9.2%"><span>9%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>伊朗胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>新西兰胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>伊朗</b>（72%，信心高）· 最可能比分 2:0 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 H · 第1轮</span><span>2026-06-14</span></header>
+      <h2>西班牙 <small>vs</small> 佛得角</h2>
+      <div class="venue">中立场 · 预期比分 λ 2.67 - 0.45</div>
+      <div class="bar">
+        <div class="seg home" style="width:84.2%"><span>84%</span></div>
+        <div class="seg draw" style="width:11.6%"><span>12%</span></div>
+        <div class="seg away" style="width:4.2%"><span>4%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>西班牙胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>佛得角胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>西班牙</b>（84%，信心高）· 最可能比分 2:0 · 总进球约 3 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 H · 第1轮</span><span>2026-06-14</span></header>
+      <h2>沙特 <small>vs</small> 乌拉圭</h2>
+      <div class="venue">中立场 · 预期比分 λ 0.36 - 1.78</div>
+      <div class="bar">
+        <div class="seg home" style="width:6.7%"><span>7%</span></div>
+        <div class="seg draw" style="width:20.7%"><span>21%</span></div>
+        <div class="seg away" style="width:72.6%"><span>73%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>沙特胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>乌拉圭胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>乌拉圭</b>（73%，信心高）· 最可能比分 0:1 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 I · 第1轮</span><span>2026-06-14</span></header>
+      <h2>法国 <small>vs</small> 塞内加尔</h2>
+      <div class="venue">中立场 · 预期比分 λ 1.37 - 0.79</div>
+      <div class="bar">
+        <div class="seg home" style="width:50.6%"><span>51%</span></div>
+        <div class="seg draw" style="width:27.9%"><span>28%</span></div>
+        <div class="seg away" style="width:21.5%"><span>21%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>法国胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>塞内加尔胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>法国</b>（51%，信心中）· 最可能比分 1:0 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 I · 第1轮</span><span>2026-06-14</span></header>
+      <h2>伊拉克 <small>vs</small> 挪威</h2>
+      <div class="venue">中立场 · 预期比分 λ 0.6 - 2.11</div>
+      <div class="bar">
+        <div class="seg home" style="width:9.2%"><span>9%</span></div>
+        <div class="seg draw" style="width:18.2%"><span>18%</span></div>
+        <div class="seg away" style="width:72.6%"><span>73%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>伊拉克胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>挪威胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>挪威</b>（73%，信心高）· 最可能比分 0:2 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 J · 第1轮</span><span>2026-06-14</span></header>
+      <h2>阿根廷 <small>vs</small> 阿尔及利亚</h2>
+      <div class="venue">中立场 · 预期比分 λ 1.68 - 0.59</div>
+      <div class="bar">
+        <div class="seg home" style="width:64.0%"><span>64%</span></div>
+        <div class="seg draw" style="width:23.4%"><span>23%</span></div>
+        <div class="seg away" style="width:12.6%"><span>13%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>阿根廷胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>阿尔及利亚胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>阿根廷</b>（64%，信心高）· 最可能比分 1:0 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 J · 第1轮</span><span>2026-06-14</span></header>
+      <h2>奥地利 <small>vs</small> 约旦</h2>
+      <div class="venue">中立场 · 预期比分 λ 1.8 - 0.77</div>
+      <div class="bar">
+        <div class="seg home" style="width:61.9%"><span>62%</span></div>
+        <div class="seg draw" style="width:22.6%"><span>23%</span></div>
+        <div class="seg away" style="width:15.5%"><span>16%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>奥地利胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>约旦胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>奥地利</b>（62%，信心高）· 最可能比分 1:0 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 K · 第1轮</span><span>2026-06-14</span></header>
+      <h2>葡萄牙 <small>vs</small> 刚果(金)</h2>
+      <div class="venue">中立场 · 预期比分 λ 1.55 - 0.54</div>
+      <div class="bar">
+        <div class="seg home" style="width:62.1%"><span>62%</span></div>
+        <div class="seg draw" style="width:25.2%"><span>25%</span></div>
+        <div class="seg away" style="width:12.7%"><span>13%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>葡萄牙胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>刚果(金)胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>葡萄牙</b>（62%，信心高）· 最可能比分 1:0 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 K · 第1轮</span><span>2026-06-14</span></header>
+      <h2>乌兹别克 <small>vs</small> 哥伦比亚</h2>
+      <div class="venue">中立场 · 预期比分 λ 0.49 - 1.59</div>
+      <div class="bar">
+        <div class="seg home" style="width:11.1%"><span>11%</span></div>
+        <div class="seg draw" style="width:24.4%"><span>24%</span></div>
+        <div class="seg away" style="width:64.5%"><span>65%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>乌兹别克胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>哥伦比亚胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>哥伦比亚</b>（65%，信心高）· 最可能比分 0:1 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 L · 第1轮</span><span>2026-06-14</span></header>
+      <h2>英格兰 <small>vs</small> 克罗地亚</h2>
+      <div class="venue">中立场 · 预期比分 λ 1.31 - 0.74</div>
+      <div class="bar">
+        <div class="seg home" style="width:50.2%"><span>50%</span></div>
+        <div class="seg draw" style="width:28.7%"><span>29%</span></div>
+        <div class="seg away" style="width:21.0%"><span>21%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>英格兰胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>克罗地亚胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>英格兰</b>（50%，信心中）· 最可能比分 1:0 · 总进球约 2 球</p>
+    </article>
+
+    <article class="card">
+      <header><span class="grp">组 L · 第1轮</span><span>2026-06-14</span></header>
+      <h2>加纳 <small>vs</small> 巴拿马</h2>
+      <div class="venue">中立场 · 预期比分 λ 1.17 - 1.2</div>
+      <div class="bar">
+        <div class="seg home" style="width:35.3%"><span>35%</span></div>
+        <div class="seg draw" style="width:27.9%"><span>28%</span></div>
+        <div class="seg away" style="width:36.8%"><span>37%</span></div>
+      </div>
+      <div class="legend"><span><i class="dot home"></i>加纳胜</span><span><i class="dot draw"></i>平</span><span><i class="dot away"></i>巴拿马胜</span></div>
+      <p class="concl">📊 模型结论：倾向 <b>巴拿马</b>（37%，信心低）· 最可能比分 1:1 · 总进球约 2 球</p>
+    </article></div>
+<footer>球神谕 · 信息分析工具 · 第一轮模型结论 · 不构成任何投注建议</footer>
+</div></body></html>
