@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>球神谕 · 2026世界杯AI预测</title>
+<style>
+  :root{--bg:#0b0e14;--card:#141925;--line:#222a3a;--home:#3ea6ff;--draw:#8b93a7;--away:#ff5d73;--txt:#e6e9f0;--mut:#8b93a7}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:"PingFang SC",-apple-system,system-ui,sans-serif;line-height:1.5}
+  .wrap{max-width:1100px;margin:0 auto;padding:24px 16px 64px}
+  .top h1{font-size:24px;letter-spacing:1px}
+  .top .tag{color:var(--mut);font-size:13px;margin-top:4px}
+  .warn{margin:16px 0;padding:12px 14px;border:1px solid #3a2a2a;background:#1c1414;border-radius:10px;color:#ffb4b4;font-size:13px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin-top:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .card header{display:flex;justify-content:space-between;color:var(--mut);font-size:12px}
+  .grp{background:#1d2740;color:#9fc0ff;padding:1px 8px;border-radius:20px}
+  .card h2{font-size:19px;margin:8px 0 2px} .card h2 small{color:var(--mut);font-weight:400;font-size:13px}
+  .venue{color:var(--mut);font-size:12px;margin-bottom:12px}
+  .bar{display:flex;height:30px;border-radius:8px;overflow:hidden;font-size:12px}
+  .seg{display:flex;align-items:center;justify-content:center;color:#0b0e14;font-weight:700}
+  .seg.home{background:var(--home)} .seg.draw{background:var(--draw)} .seg.away{background:var(--away)}
+  .seg span{opacity:.95}
+  .legend{display:flex;gap:14px;margin:7px 0 4px;font-size:12px;color:var(--mut)}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}
+  .dot.home{background:var(--home)} .dot.draw{background:var(--draw)} .dot.away{background:var(--away)}
+  .sub{color:var(--mut);font-size:12px;margin:12px 0 6px}
+  .tgrow{display:flex;align-items:flex-end;gap:5px;height:46px}
+  .tg{flex:1;text-align:center} .tgfill{background:#2a3550;border-radius:3px 3px 0 0;min-height:2px}
+  .tglab{font-size:10px;color:var(--mut);margin-top:3px}
+  .summary{margin-top:12px;font-size:13px;color:#c7cede;border-top:1px solid var(--line);padding-top:10px}
+  footer{margin-top:30px;color:var(--mut);font-size:12px;text-align:center;line-height:1.8}
+</style></head>
+<body><div class="wrap">
+  <div class="top">
+    <h1>⚽ 球神谕 · 2026 世界杯 AI 预测</h1>
+    <div class="tag">Dixon-Coles 双泊松 + 时间/赛事加权 MLE ｜ 仅展示模型概率，未含 SP/价值，仅供参考　·　不承诺赢，只帮你看懂概率</div>
+  </div>
+  <div class="warn">⚠️ 仅供数据分析参考，不构成投注建议。理性投注，未满 18 周岁禁止参与。模型概率 ≠ 中奖概率，竞彩长期返还率＜100%，亏损为常态。</div>
+  <div class="grid">
+    
+    <article class="card">
+      <header>
+        <span class="grp">组 A</span>
+        <span class="date">2026-06-11</span>
+      </header>
+      <h2>墨西哥 <small>vs</small> 南非</h2>
+      <div class="venue">墨西哥城·阿兹特克 · 东道主主场
+        　预期比分 λ 1.56 - 0.71</div>
+      
+      <div class="bar">
+        <div class="seg home" style="width:57.7%"><span>58%</span></div>
+        <div class="seg draw" style="width:25.4%"><span>25%</span></div>
+        <div class="seg away" style="width:16.9%"><span>17%</span></div>
+      </div>
+      <div class="legend">
+        <span><i class="dot home"></i>墨西哥胜</span>
+        <span><i class="dot draw"></i>平</span>
+        <span><i class="dot away"></i>南非胜</span>
+      </div>
+      <div class="sub">总进球分布</div>
+      <div class="tgrow"><div class="tg"><div class="tgfill" style="height:39%"></div><div class="tglab">0</div></div><div class="tg"><div class="tgfill" style="height:88%"></div><div class="tglab">1</div></div><div class="tg"><div class="tgfill" style="height:100%"></div><div class="tglab">2</div></div><div class="tg"><div class="tgfill" style="height:76%"></div><div class="tglab">3</div></div><div class="tg"><div class="tgfill" style="height:43%"></div><div class="tglab">4</div></div><div class="tg"><div class="tgfill" style="height:19%"></div><div class="tglab">5</div></div><div class="tg"><div class="tgfill" style="height:7%"></div><div class="tglab">6</div></div><div class="tg"><div class="tgfill" style="height:3%"></div><div class="tglab">7+</div></div></div>
+      <div class="sub">高概率比分　1:0 <b>16%</b> · 2:0 <b>13%</b> · 1:1 <b>11%</b></div>
+      <p class="summary">模型信心较高倾向墨西哥(58%)；最可能比分 1:0，总进球约 2 球。</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <span class="grp">组 B</span>
+        <span class="date">2026-06-12</span>
+      </header>
+      <h2>加拿大 <small>vs</small> 波黑</h2>
+      <div class="venue">多伦多 · 东道主主场
+        　预期比分 λ 1.92 - 0.84</div>
+      
+      <div class="bar">
+        <div class="seg home" style="width:62.7%"><span>63%</span></div>
+        <div class="seg draw" style="width:21.6%"><span>22%</span></div>
+        <div class="seg away" style="width:15.7%"><span>16%</span></div>
+      </div>
+      <div class="legend">
+        <span><i class="dot home"></i>加拿大胜</span>
+        <span><i class="dot draw"></i>平</span>
+        <span><i class="dot away"></i>波黑胜</span>
+      </div>
+      <div class="sub">总进球分布</div>
+      <div class="tgrow"><div class="tg"><div class="tgfill" style="height:27%"></div><div class="tglab">0</div></div><div class="tg"><div class="tgfill" style="height:72%"></div><div class="tglab">1</div></div><div class="tg"><div class="tgfill" style="height:100%"></div><div class="tglab">2</div></div><div class="tg"><div class="tgfill" style="height:92%"></div><div class="tglab">3</div></div><div class="tg"><div class="tgfill" style="height:63%"></div><div class="tglab">4</div></div><div class="tg"><div class="tgfill" style="height:35%"></div><div class="tglab">5</div></div><div class="tg"><div class="tgfill" style="height:16%"></div><div class="tglab">6</div></div><div class="tg"><div class="tgfill" style="height:9%"></div><div class="tglab">7+</div></div></div>
+      <div class="sub">高概率比分　1:0 <b>12%</b> · 2:0 <b>12%</b> · 1:1 <b>10%</b></div>
+      <p class="summary">模型信心较高倾向加拿大(63%)；最可能比分 1:0，总进球约 2 球。</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <span class="grp">组 D</span>
+        <span class="date">2026-06-12</span>
+      </header>
+      <h2>美国 <small>vs</small> 巴拉圭</h2>
+      <div class="venue">洛杉矶·英格尔伍德 · 东道主主场
+        　预期比分 λ 1.11 - 1.14</div>
+      
+      <div class="bar">
+        <div class="seg home" style="width:35.0%"><span>35%</span></div>
+        <div class="seg draw" style="width:28.8%"><span>29%</span></div>
+        <div class="seg away" style="width:36.2%"><span>36%</span></div>
+      </div>
+      <div class="legend">
+        <span><i class="dot home"></i>美国胜</span>
+        <span><i class="dot draw"></i>平</span>
+        <span><i class="dot away"></i>巴拉圭胜</span>
+      </div>
+      <div class="sub">总进球分布</div>
+      <div class="tgrow"><div class="tg"><div class="tgfill" style="height:40%"></div><div class="tglab">0</div></div><div class="tg"><div class="tgfill" style="height:88%"></div><div class="tglab">1</div></div><div class="tg"><div class="tgfill" style="height:100%"></div><div class="tglab">2</div></div><div class="tg"><div class="tgfill" style="height:75%"></div><div class="tglab">3</div></div><div class="tg"><div class="tgfill" style="height:42%"></div><div class="tglab">4</div></div><div class="tg"><div class="tgfill" style="height:19%"></div><div class="tglab">5</div></div><div class="tg"><div class="tgfill" style="height:7%"></div><div class="tglab">6</div></div><div class="tg"><div class="tgfill" style="height:3%"></div><div class="tglab">7+</div></div></div>
+      <div class="sub">高概率比分　1:1 <b>13%</b> · 0:1 <b>12%</b> · 1:0 <b>12%</b></div>
+      <p class="summary">模型胶着难分倾向巴拉圭(36%)；最可能比分 1:1，总进球约 2 球。</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <span class="grp">组 B</span>
+        <span class="date">2026-06-13</span>
+      </header>
+      <h2>卡塔尔 <small>vs</small> 瑞士</h2>
+      <div class="venue">中立场 · 中立场
+        　预期比分 λ 0.68 - 2.79</div>
+      
+      <div class="bar">
+        <div class="seg home" style="width:6.4%"><span>6%</span></div>
+        <div class="seg draw" style="width:12.5%"><span>12%</span></div>
+        <div class="seg away" style="width:81.1%"><span>81%</span></div>
+      </div>
+      <div class="legend">
+        <span><i class="dot home"></i>卡塔尔胜</span>
+        <span><i class="dot draw"></i>平</span>
+        <span><i class="dot away"></i>瑞士胜</span>
+      </div>
+      <div class="sub">总进球分布</div>
+      <div class="tgrow"><div class="tg"><div class="tgfill" style="height:14%"></div><div class="tglab">0</div></div><div class="tg"><div class="tgfill" style="height:50%"></div><div class="tglab">1</div></div><div class="tg"><div class="tgfill" style="height:87%"></div><div class="tglab">2</div></div><div class="tg"><div class="tgfill" style="height:100%"></div><div class="tglab">3</div></div><div class="tg"><div class="tgfill" style="height:87%"></div><div class="tglab">4</div></div><div class="tg"><div class="tgfill" style="height:60%"></div><div class="tglab">5</div></div><div class="tg"><div class="tgfill" style="height:35%"></div><div class="tglab">6</div></div><div class="tg"><div class="tgfill" style="height:29%"></div><div class="tglab">7+</div></div></div>
+      <div class="sub">高概率比分　0:2 <b>12%</b> · 0:3 <b>11%</b> · 0:1 <b>9%</b></div>
+      <p class="summary">模型信心较高倾向瑞士(81%)；最可能比分 0:2，总进球约 3 球。</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <span class="grp">组 C</span>
+        <span class="date">2026-06-13</span>
+      </header>
+      <h2>巴西 <small>vs</small> 摩洛哥</h2>
+      <div class="venue">中立场 · 中立场
+        　预期比分 λ 0.83 - 0.78</div>
+      
+      <div class="bar">
+        <div class="seg home" style="width:33.6%"><span>34%</span></div>
+        <div class="seg draw" style="width:35.3%"><span>35%</span></div>
+        <div class="seg away" style="width:31.1%"><span>31%</span></div>
+      </div>
+      <div class="legend">
+        <span><i class="dot home"></i>巴西胜</span>
+        <span><i class="dot draw"></i>平</span>
+        <span><i class="dot away"></i>摩洛哥胜</span>
+      </div>
+      <div class="sub">总进球分布</div>
+      <div class="tgrow"><div class="tg"><div class="tgfill" style="height:63%"></div><div class="tglab">0</div></div><div class="tg"><div class="tgfill" style="height:100%"></div><div class="tglab">1</div></div><div class="tg"><div class="tgfill" style="height:81%"></div><div class="tglab">2</div></div><div class="tg"><div class="tgfill" style="height:43%"></div><div class="tglab">3</div></div><div class="tg"><div class="tgfill" style="height:17%"></div><div class="tglab">4</div></div><div class="tg"><div class="tgfill" style="height:6%"></div><div class="tglab">5</div></div><div class="tg"><div class="tgfill" style="height:1%"></div><div class="tglab">6</div></div><div class="tg"><div class="tgfill" style="height:0%"></div><div class="tglab">7+</div></div></div>
+      <div class="sub">高概率比分　0:0 <b>20%</b> · 1:0 <b>17%</b> · 0:1 <b>16%</b></div>
+      <p class="summary">模型看巴西与摩洛哥胶着难分、平局概率最高(35%)；最可能比分 0:0，总进球约 1 球。</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <span class="grp">组 E</span>
+        <span class="date">2026-06-14</span>
+      </header>
+      <h2>德国 <small>vs</small> 库拉索</h2>
+      <div class="venue">中立场 · 中立场
+        　预期比分 λ 3.13 - 0.51</div>
+      
+      <div class="bar">
+        <div class="seg home" style="width:87.7%"><span>88%</span></div>
+        <div class="seg draw" style="width:8.9%"><span>9%</span></div>
+        <div class="seg away" style="width:3.4%"><span>3%</span></div>
+      </div>
+      <div class="legend">
+        <span><i class="dot home"></i>德国胜</span>
+        <span><i class="dot draw"></i>平</span>
+        <span><i class="dot away"></i>库拉索胜</span>
+      </div>
+      <div class="sub">总进球分布</div>
+      <div class="tgrow"><div class="tg"><div class="tgfill" style="height:12%"></div><div class="tglab">0</div></div><div class="tg"><div class="tgfill" style="height:45%"></div><div class="tglab">1</div></div><div class="tg"><div class="tgfill" style="height:82%"></div><div class="tglab">2</div></div><div class="tg"><div class="tgfill" style="height:100%"></div><div class="tglab">3</div></div><div class="tg"><div class="tgfill" style="height:91%"></div><div class="tglab">4</div></div><div class="tg"><div class="tgfill" style="height:66%"></div><div class="tglab">5</div></div><div class="tg"><div class="tgfill" style="height:40%"></div><div class="tglab">6</div></div><div class="tg"><div class="tgfill" style="height:36%"></div><div class="tglab">7+</div></div></div>
+      <div class="sub">高概率比分　3:0 <b>13%</b> · 2:0 <b>13%</b> · 4:0 <b>10%</b></div>
+      <p class="summary">模型信心较高倾向德国(88%)；最可能比分 3:0，总进球约 3 球。</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <span class="grp">组 F</span>
+        <span class="date">2026-06-14</span>
+      </header>
+      <h2>荷兰 <small>vs</small> 日本</h2>
+      <div class="venue">中立场 · 中立场
+        　预期比分 λ 1.51 - 1.03</div>
+      
+      <div class="bar">
+        <div class="seg home" style="width:48.5%"><span>49%</span></div>
+        <div class="seg draw" style="width:25.9%"><span>26%</span></div>
+        <div class="seg away" style="width:25.6%"><span>26%</span></div>
+      </div>
+      <div class="legend">
+        <span><i class="dot home"></i>荷兰胜</span>
+        <span><i class="dot draw"></i>平</span>
+        <span><i class="dot away"></i>日本胜</span>
+      </div>
+      <div class="sub">总进球分布</div>
+      <div class="tgrow"><div class="tg"><div class="tgfill" style="height:31%"></div><div class="tglab">0</div></div><div class="tg"><div class="tgfill" style="height:78%"></div><div class="tglab">1</div></div><div class="tg"><div class="tgfill" style="height:100%"></div><div class="tglab">2</div></div><div class="tg"><div class="tgfill" style="height:85%"></div><div class="tglab">3</div></div><div class="tg"><div class="tgfill" style="height:54%"></div><div class="tglab">4</div></div><div class="tg"><div class="tgfill" style="height:27%"></div><div class="tglab">5</div></div><div class="tg"><div class="tgfill" style="height:12%"></div><div class="tglab">6</div></div><div class="tg"><div class="tgfill" style="height:6%"></div><div class="tglab">7+</div></div></div>
+      <div class="sub">高概率比分　1:1 <b>12%</b> · 1:0 <b>12%</b> · 2:1 <b>9%</b></div>
+      <p class="summary">模型略有倾向倾向荷兰(49%)；最可能比分 1:1，总进球约 2 球。</p>
+    </article>
+
+    <article class="card">
+      <header>
+        <span class="grp">组 H</span>
+        <span class="date">2026-06-15</span>
+      </header>
+      <h2>西班牙 <small>vs</small> 佛得角</h2>
+      <div class="venue">中立场 · 中立场
+        　预期比分 λ 2.61 - 0.47</div>
+      
+      <div class="bar">
+        <div class="seg home" style="width:83.2%"><span>83%</span></div>
+        <div class="seg draw" style="width:12.2%"><span>12%</span></div>
+        <div class="seg away" style="width:4.6%"><span>5%</span></div>
+      </div>
+      <div class="legend">
+        <span><i class="dot home"></i>西班牙胜</span>
+        <span><i class="dot draw"></i>平</span>
+        <span><i class="dot away"></i>佛得角胜</span>
+      </div>
+      <div class="sub">总进球分布</div>
+      <div class="tgrow"><div class="tg"><div class="tgfill" style="height:21%"></div><div class="tglab">0</div></div><div class="tg"><div class="tgfill" style="height:63%"></div><div class="tglab">1</div></div><div class="tg"><div class="tgfill" style="height:98%"></div><div class="tglab">2</div></div><div class="tg"><div class="tgfill" style="height:100%"></div><div class="tglab">3</div></div><div class="tg"><div class="tgfill" style="height:77%"></div><div class="tglab">4</div></div><div class="tg"><div class="tgfill" style="height:47%"></div><div class="tglab">5</div></div><div class="tg"><div class="tgfill" style="height:24%"></div><div class="tglab">6</div></div><div class="tg"><div class="tgfill" style="height:17%"></div><div class="tglab">7+</div></div></div>
+      <div class="sub">高概率比分　2:0 <b>16%</b> · 3:0 <b>14%</b> · 1:0 <b>12%</b></div>
+      <p class="summary">模型信心较高倾向西班牙(83%)；最可能比分 2:0，总进球约 3 球。</p>
+    </article>
+  </div>
+  <footer>
+    球神谕为信息分析工具，不代购、不承诺收益、不提供投注。<br>
+    模型基于公开国际赛果(Dixon-Coles)，含洲际跨洲校正；预测存在不确定性，请独立判断。
+  </footer>
+</div></body></html>
